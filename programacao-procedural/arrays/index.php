@@ -16,6 +16,7 @@ $idades = array(
 	"Saulo"		=>"30"
 );
 
+//listaguem de atributos do array pessoas
 foreach ($idades as $nome => $idade) {
 	
 	echo"</br> NOME: {$nome} | IDADE: {$idade} </br>";
