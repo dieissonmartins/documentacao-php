@@ -14,7 +14,7 @@ class Operacoes{
 		if(is_numeric($v1) and is_numeric($v2)){
 		 	$this->valor1  =$v1; 
 		 	$this->valor2  =$v2;
-		 } 
+		} 
 	}
 
 	function somar(){
