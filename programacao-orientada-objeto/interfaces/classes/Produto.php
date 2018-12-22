@@ -1,0 +1,22 @@
+<?php
+
+class Produto{
+	
+	private $descricao;
+	private $estoque;
+	private $preco;
+	//...
+
+	public function __construct($descricao,$estoque,$preco){
+		$this->estoque = $estoque;
+		$this->descricao = $descricao;
+		$this->preco = $preco;
+	}
+
+	public getPreco(){
+		return $this->preco;
+	}
+
+}
+
+?>
