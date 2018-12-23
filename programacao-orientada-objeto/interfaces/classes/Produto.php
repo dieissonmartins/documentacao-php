@@ -13,7 +13,7 @@ class Produto{
 		$this->preco = $preco;
 	}
 
-	public getPreco(){
+	public function getPreco(){
 		return $this->preco;
 	}
 
