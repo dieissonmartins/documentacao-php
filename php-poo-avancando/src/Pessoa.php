@@ -19,6 +19,14 @@ class Pessoa{
 		}
 		return $idade;
 	}
+	public function setAltura($idade){
+
+		//verifica se é um valor numerico
+		if(!is_float($idade)){
+			die('Não é um valor Flutuante');
+		}
+		return $idade;
+	}
 }
 
 

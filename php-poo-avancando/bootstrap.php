@@ -4,10 +4,11 @@ require __DIR__.'/src/Pessoa.php';
 
 $pessoa = new Pessoa;
 
-$pessoa->setNome('Dieisson Martins');
-$pessoa->setIdade(21);
+echo '</br>'.$pessoa->setNome('Dieisson Martins');
+echo '</br>'.$pessoa->setIdade(21);
+echo '</br>'.$pessoa->setAltura(1.76);
 
-var_dump(new Pessoa);
+var_dump($pessoa);
 
 
 ?>
