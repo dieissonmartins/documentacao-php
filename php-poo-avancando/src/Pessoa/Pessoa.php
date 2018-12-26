@@ -1,7 +1,6 @@
 <?php
 
-//Apelido para a classe
-namespace DieissonMartins\Pessoa;
+namespace DieissonMartins;
 
 class Pessoa{
 
