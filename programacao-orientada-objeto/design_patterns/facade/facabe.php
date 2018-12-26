@@ -1,6 +1,6 @@
 <?php
 
-class PagSeguroFacabe{
+class PagSeguroFacade{
 	private $request;
 
 	public function __construct( $currency ){
@@ -37,7 +37,7 @@ class PagSeguroFacabe{
 		$this->request->setSender( $sender );
 	}
 
-	public function precess(){
+	public function process(){
 		//..
 	}
 
