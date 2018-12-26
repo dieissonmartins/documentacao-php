@@ -19,7 +19,7 @@ $endereco = new PagSeguroAddress;
 $endereco->setPostalCode( $customer->postal );
 $endereco->setStreet( $customer->address );
 $endereco->setNumber( $customer->bumber );
-$endereco->setDistrict( $customer->neighborhood );]
+$endereco->setDistrict( $customer->neighborhood );
 $endereco->setCity( $customer->city );
 $endereco->setState( $customer->state );
 $paymenRequest->setShippingAddress( $address );
