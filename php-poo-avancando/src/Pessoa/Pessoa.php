@@ -1,6 +1,6 @@
 <?php
 
-namespace DieissonMartins;
+namespace DieissonMartins\Pessoa;
 
 class Pessoa{
 
@@ -21,13 +21,13 @@ class Pessoa{
 		}
 		return $idade;
 	}
-	public function setAltura($idade){
+	public function setAltura($altura){
 
-		//verifica se é um valor numerico
-		if(!is_float($idade)){
+		//verifica se é um valor e flutuante
+		if(!is_float($altura)){
 			die('Não é um valor Flutuante');
 		}
-		return $idade;
+		return $altura;
 	}
 }
 

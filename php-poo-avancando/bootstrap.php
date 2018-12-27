@@ -1,8 +1,6 @@
 <?php
+require __DIR__.'/autoload.php';
 
-require __DIR__.'/src/Pessoa/Pessoa.php';
-
-$pessoa = new DieissonMartins\Pessoa;
 
 echo '</br>'.$pessoa->setNome('Dieisson Martins');
 echo '</br>'.$pessoa->setIdade(21);
