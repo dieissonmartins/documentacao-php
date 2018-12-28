@@ -23,9 +23,18 @@ require __DIR__.'/autoload.php';
 //}
 
 $pessoa = new  DieissonMartins\Pessoa\Pessoa;
+$pessoa->nome = 'Dieisson';
+$pessoa->idade = 21;
+$pessoa->altura = 1.70;
 
 echo $pessoa;
 
+$garota = new DieissonMartins\Pessoa\Pessoa;
+$garota->nome = 'Launa'; 
+$garota->idade = 18; 
+$garota->altura = 1.67;
+
+echo $garota; 
 
 //var_dump( (new DieissonMartins\DB\ORM)->select(false) );
 
