@@ -2,6 +2,7 @@
 require __DIR__.'/autoload.php';
 
 
+//comentario 1
 //echo '</br>'.$pessoa->setNome('Dieisson Martins');
 //echo '</br>'.$pessoa->setIdade(21);
 //echo '</br>'.$pessoa->setAltura(1.76);
@@ -9,8 +10,18 @@ require __DIR__.'/autoload.php';
 //
 //var_dump($pessoa);
 
-var_dump( (new DieissonMartins\DB\Db)->conexao() );
-var_dump( (new DieissonMartins\DB\MySql)->conexao() );
-var_dump( (new DieissonMartins\DB\Postgres)->conexao() );
+//comentario 2
+//var_dump( (new DieissonMartins\DB\Db)->conexao() );
+//var_dump( (new DieissonMartins\DB\MySql)->conexao() );
+//var_dump( (new DieissonMartins\DB\Postgres)->conexao() );
+
+try {
+	(new DieissonMartins\DB\ORM)->select(false);
+}catch (DieissonMartins\MyException $error ){
+	echo $error->getMessage();
+}
+
+
+//var_dump( (new DieissonMartins\DB\ORM)->select(false) );
 
 ?>
