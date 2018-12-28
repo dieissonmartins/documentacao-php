@@ -4,6 +4,12 @@ namespace DieissonMartins\Pessoa;
 
 class Pessoa{
 
+	public function __construct(){
+		echo 'Classes instanciada </br>';
+	}
+
+	//call dispara se o metodo for protegido 
+	//protected function setNome($nome){
 	public function setNome($nome){
 		
 		//verifica se é uma string
@@ -28,6 +34,17 @@ class Pessoa{
 			die('Não é um valor Flutuante');
 		}
 		return $altura;
+	}
+
+	//metodo magico Call()
+	//public function __call($metodo, $propriedades){
+	//	var_dump($metodo, $propriedades);
+	//}
+
+	//metodo magico toString()
+	public function __toString() :string{
+		//return 'retorna metodo classe em um string';
+		return implode(';', $this->setNome() );
 	}
 }
 

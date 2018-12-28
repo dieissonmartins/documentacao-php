@@ -15,11 +15,16 @@ require __DIR__.'/autoload.php';
 //var_dump( (new DieissonMartins\DB\MySql)->conexao() );
 //var_dump( (new DieissonMartins\DB\Postgres)->conexao() );
 
-try {
-	(new DieissonMartins\DB\ORM)->select(false);
-}catch (DieissonMartins\MyException $error ){
-	echo $error->getMessage();
-}
+//comentario 3
+//try {
+//	(new DieissonMartins\DB\ORM)->select(false);
+//}catch (DieissonMartins\MyException $error ){
+//	echo $error->getMessage();
+//}
+
+$pessoa = new  DieissonMartins\Pessoa\Pessoa;
+
+echo $pessoa;
 
 
 //var_dump( (new DieissonMartins\DB\ORM)->select(false) );
