@@ -17,7 +17,7 @@ function lista_combo_cidades($id = NULL){
 	return $output; 
 }
 
-$teste = lista_combo_cidades();
-echo $teste;
+//$teste = lista_combo_cidades();
+//echo $teste;
 
 ?>
