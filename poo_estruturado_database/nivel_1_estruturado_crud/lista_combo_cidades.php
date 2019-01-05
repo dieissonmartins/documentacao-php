@@ -11,7 +11,7 @@ function lista_combo_cidades($id = NULL){
 	if($resultado){
 		while ($linha = mysqli_fetch_assoc($resultado)) {
 			$check = ($linha['id'] == $id)? 'selected=1':'';
-			$output .= "<option $check value'{$linha['id']}'> {$linha['nome']} </option>";
+			$output .= "<option $check value='{$linha['id']}'> {$linha['nome']} </option>";
 		}
 	}
 	return $output; 
