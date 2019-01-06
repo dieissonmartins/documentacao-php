@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body>
+	<div class="container">
 	<form enctype="multipart/form-data" method="post" action="pessoa_save_insert.php">
 		<label>Código</label>
 		<input type="text" name="id" readonly="1" style="width: 30%">
@@ -35,6 +36,7 @@
 		</select>
 		<input type="submit" value="Enviar Dados">		
 	</form>
+	</div>
 
 </body>
 </html>
