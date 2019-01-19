@@ -8,9 +8,9 @@ function lista_pessoas(){
 	$banco 		= 'bd_livro';
 	$conexao 	= mysqli_connect($servidor,$usuario,$senha,$banco);
 
-	$resultado 	= mysqli_query($conexao,"SELECT * pessoa order by id");
+	$resultado 	= mysqli_query($conexao,"SELECT * FROM pessoa order by id");
 	$lista 		= mysqli_fetch_assoc($resultado);
-
+	
 	return $lista;
 }
 
