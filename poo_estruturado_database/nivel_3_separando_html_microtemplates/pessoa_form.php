@@ -51,7 +51,7 @@ $form = str_replace('{bairro}', $pessoa['bairro'], $form);
 $form = str_replace('{telefone}', $pessoa['telefone'], $form);
 $form = str_replace('{email}', $pessoa['email'], $form);
 $form = str_replace('{id_cidade}', $pessoa['id_cidade'], $form);
-$from = str_replace('{cidades}', lista_combo_cidades( $pessoa['id_cidade']), $form);
+$form = str_replace('{cidades}', lista_combo_cidades( $pessoa['id_cidade']), $form);
 echo $form;
 
 ?>
