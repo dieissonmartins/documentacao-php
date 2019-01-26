@@ -43,14 +43,11 @@ else{
 	
 	$cidades ='';
 
-	foreach ($Cidade::all() as $cidade){
+	foreach (Cidade::all() as $cidade){
 		$check = ($cidade['id'] == $pessoa['id_cidade'])? 'selected=1' :'';
 		$cidades .= "<option $check value='{$cidade['id']}'> {$cidade['nome']} </option>";
 	}
 	$form = str_replace('{cidades}', $cidades, $form);
-	
+
 	echo $form;
-
-}
-
 ?>

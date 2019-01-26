@@ -11,6 +11,8 @@ try{
 
 $pessoas = Pessoa::all();
 
+var_dump($pessoas);
+
 catch(Exception $e){
 	print $e->getMessage();
 }
