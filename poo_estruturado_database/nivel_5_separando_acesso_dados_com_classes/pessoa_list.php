@@ -34,6 +34,6 @@ if ($pessoas){
 $list = file_get_contents('html/list.html');
 $list = str_replace('{items}', $items, $list);
 
-echo $list
+echo $list;
 
 ?>
