@@ -5,15 +5,15 @@
 $diretorio = "uploads/";
 echo $diretorio_arquivo = $diretorio . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
-$imageFileType = strtolower(pathinfo($diretorio_arquivo,PATHINFO_EXTENSION));
+$tipoArquivo = strtolower(pathinfo($diretorio_arquivo,PATHINFO_EXTENSION));
 
 // Verifique se o arquivo de imagem é uma imagem real ou uma imagem falsa
 if(isset($_POST["submit"])) {
  
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    $checar = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
  
-    if($check !== false) {
-        echo "Arquivo é uma imagem - " . $check["mime"] . ".";
+    if($checar !== false) {
+        echo "Arquivo é uma imagem - " . $checar["mime"] . ".";
         $uploadOk = 1;
     } else {
         echo "Arquivo não é uma imagem.";
@@ -36,7 +36,7 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 }
 
 // Permitir determinados formatos de arquivo
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+if($tipoArquivo != "jpg" && $tipoArquivo != "png" && $tipoArquivo != "jpeg" && $tipoArquivo != "gif" ) {
     
     echo "Desculpe, somente arquivos JPG, JPEG, PNG e GIF são permitidos.";
     $uploadOk = 0;
