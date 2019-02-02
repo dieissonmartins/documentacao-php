@@ -1,7 +1,7 @@
 <?php
 
 require_once('classes/Pessoa.php');
-//require_once('classes/Cidade.php');
+require_once('classes/Cidade.php');
 
 if (!empty($_REQUEST['action'])){
 	
