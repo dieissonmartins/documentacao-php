@@ -18,7 +18,7 @@ try{
 }
 catch(PDOException $e){
 
-	echo "Não Conectado ao Banco de Dados..." $e->getMessage;
+	echo "Não Conectado ao Banco de Dados...".$e->getMessage;
 }
 
 ?>
