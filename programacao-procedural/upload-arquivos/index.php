@@ -12,7 +12,7 @@
 		<section>
 			<form action="upload.php" method="post" enctype="multipart/form-data">
 			    Selecione o arquivo para upload:
-			    <input type="file" name="fileToUpload" id="fileToUpload">
+			    <input type="file" name="fileToUpload">
 			    <input type="submit" value="Upload Image" name="submit">
 			</form>
 		</section>
